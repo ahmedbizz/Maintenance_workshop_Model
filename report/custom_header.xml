@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="employee_metco_print">
+       
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="oe_structure" style="text-align:right;">
+
+
+
+                
+
+                        <div class="page" style="text-align: right;">
+
+                            <h2>بيانات الموظف</h2>
+                            <br/>
+
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+										<th> الايميل  </th>
+                                        <th> رقم الجوال </th>
+										<th> تاريخ التعيين </th>
+										<th>القطاع</th>
+										<th>المنطقة </th>
+										<th>القسم</th>
+                                        <th>الاسم</th>
+                                        
+                                        
+                                       
+                                        
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<t t-foreach="docs" t-as="property">
+                                    <tr >
+										<td>
+											<span t-field="property.email"/>
+										</td>
+										<td>
+											<span t-field="property.phone_no"/>
+										</td>
+
+					
+
+										<td>
+											<span t-field="property.DATE_HAIER"/>
+										</td>
+
+										<td>
+											<span t-field="property.sector"/>
+										</td>
+										<td>
+											<span t-field="property.REGION"/>
+										</td>
+										<td>
+											<span t-field="property.Departmet_ids"/>
+										</td>
+                                        <td>
+                                            <span t-field="property.name"/>
+                                        </td>
+
+
+										
+
+
+
+									</tr>
+									</t>
+                                </tbody>
+
+                            </table>
+
+                            <br/>
+                            <br/>
+                             
+                        </div>
+                        
+
+
+
+
+
+                    </div>
+                     
+            </t>
+        </t>
+    </template>
+</odoo>

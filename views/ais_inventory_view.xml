@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_AIS_INVENTORY_form" model="ir.ui.view">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="model">ais.inventory</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="imge" widget="image" class="oe_avatar"/>
+                    <div class="o_row">
+                        <h1 style="color:blue;">
+                            <field name="ref_pro" readonly="1" class="oe_inline" nolabel="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name" default_focus="1"/>
+                            <field name="categ_ids" string="Department"/>
+                            <field name="Sequence_cat" readonly="1" force_save="1" string="Sequence"/>
+                        </group>
+                        <group>
+                            <field name="PART_NO"/>
+                            <field name="Location"/>
+                            <field name="QTY_pro"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_INVENTORY_All_form" model="ir.ui.view">
+        <field name="name">Inventory Category</field>
+        <field name="model">inventory.all</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" default_focus="1"/>
+                            <field name="departmet_ids_inv" default_focus="1"/>
+                            <field name="Sequence" default_focus="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_inventory_all_tree" model="ir.ui.view">
+        <field name="name">Inventory Category</field>
+        <field name="model">inventory.all</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_AIS_INVENTORY_tree" model="ir.ui.view">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="model">ais.inventory</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="ref_pro"/>
+                <field name="name"/>
+                <field name="PART_NO"/>
+                <field name="QTY_pro"/>
+                <field name="categ_ids" string="Department"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_AIS_INVENTORY_kanban" model="ir.ui.view">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="model">ais.inventory</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <kanban default_group_by="categ_ids" class="o_kanban_mobile" sample="1">
+                <field name="categ_ids"/>
+                <field name="id" attrs="{'invisible': True}"/>
+                <field name="imge"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.categ_ids.raw_value)} oe_kanban_global_click o_kanban_record_has_image_fill">
+
+
+                            <div class="o_kanban_image d-none d-md-block"
+                                 t-attf-style="background-image:url('#{kanban_image('ais.inventory', 'imge', record.id.raw_value,placeholder)}')">
+                            </div>
+
+
+                            <div class="oe_kanban_content flex-grow-1">
+                                <div class="o_kanban_record_top mb-0">
+                                    <div class="o_kanban_record_top mb-0 ">
+                                        <strong class="o_kanban_record_title">
+                                            <h4 style="color:SlateBlue;">
+                                                <field name="name"/>
+                                            </h4>
+                                        </strong>
+                                    </div>
+                                </div>
+                                <h4 style="color:Tomato;">QTY :
+                                    <field name="QTY_pro"/>
+                                </h4>
+
+
+                                <h6 style="color:SlateBlue;">PART NO.:
+                                    <field name="PART_NO"/>
+                                </h6>
+
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_AIS_INVENTORY_search" model="ir.ui.view">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="model">ais.inventory</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref_pro"/>
+                <field name="name"/>
+                <field name="PART_NO"/>
+                <field name="QTY_pro"/>
+                <field name="categ_ids" string="Department"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_categ_ids" string="Department" context="{'group_by':'categ_ids'}"/>
+                </group>
+
+            </search>
+            <!--            <searchpanel>-->
+            <!--                <field name="categ_id" string="Categories" enable_counters="1"/>-->
+            <!--            </searchpanel>-->
+        </field>
+    </record>
+
+    <record id="ais_inventory_view_graph" model="ir.ui.view">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="model">ais.inventory</field>
+        <field name="arch" type="xml">
+            <graph string="Activities Analysis" sample="1">
+                <field name="name"/>
+                <!--                <field name="QTY_pro"/>-->
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="view_enter_inventory_part_form" model="ir.ui.view">
+        <field name="name">Inventory Category</field>
+        <field name="model">enter.inventory.part</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_request_entering" type="object" string="ENTERING STOR" class="btn btn-primary"
+                            attrs="{'invisible': [('progress' ,'in',('request','enter'))]}"/>
+                    <button name="action_confirm_part" type="object" string="ENTERING STOR" class="btn btn-primary"
+                            attrs="{'invisible': [('progress' ,'in',('new','enter'))]}"
+                            groups="AIS_WORKSHOP.group_workshop_Soldier"/>
+                    <field name="progress" widget="statusbar" default="new" nolabel="1"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="NEW" bg_color="bg-primary"
+                            attrs="{'invisible': [('progress' ,'in',('request','enter'))]}"/>
+                    <widget name="web_ribbon" title="request" bg_color="bg-primary"
+                            attrs="{'invisible': [('progress' ,'in',('NEW','enter'))]}"/>
+                    <widget name="web_ribbon" title="STORED" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('request','new'))]}"/>
+                    <group>
+                        <group>
+                            <field name="date_IN_WorkShop"/>
+                        </group>
+                        <group>
+                            <field name="technician_Engineer" readonly="1" force_save="1" widget="many2one_avatar"
+                            />
+                            <field name="technician_Manger" readonly="1" force_save="1" widget="many2one_avatar"
+                            />
+                        </group>
+
+                    </group>
+                    <field name="inv_pro_ids"
+                           attrs="{'readonly': [('progress' ,'in',('enter'))]}">
+                        <tree editable="bottom">
+
+                            <field name="name_part"/>
+                            <field name="ref"/>
+                            <field name="QTY"/>
+                            <field name="reuect_num"/>
+
+                        </tree>
+
+                    </field>
+                    <group>
+                        <field name="file_scan_rep" widget="pdf_viewer"/>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_req_inventory_part_form" model="ir.ui.view">
+        <field name="name">Inventory Category</field>
+        <field name="model">req.inventory.part</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_req_part" type="object" string="ENTERING request" class="btn btn-primary"
+                            attrs="{'invisible': [('progress' ,'in',('req'))]}"
+                    />
+                    <field name="progress" widget="statusbar" default="new" nolabel="1"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="NEW" bg_color="bg-primary"
+                            attrs="{'invisible': [('progress' ,'in',('req'))]}"/>
+                    <widget name="web_ribbon" title="REQUESTED" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('new'))]}"/>
+                    <group>
+                        <group>
+                            <field name="date_IN_WorkShop"/>
+                        </group>
+                        <group>
+                            <field name="technician_Engineer" readonly="1" force_save="1" widget="many2one_avatar"
+                            />
+                        </group>
+                        <group>
+                            <field name="file_scan_rep" widget="pdf_viewer"/>
+                        </group>
+
+                    </group>
+                    <field name="inv_pro_ids"
+                           attrs="{'readonly': [('progress' ,'in',('req'))]}">
+                        <tree editable="bottom">
+
+                            <field name="name_part"/>
+                            <field name="ref"/>
+                            <field name="QTY"/>
+                            <field name="reuect_num"/>
+
+                        </tree>
+
+                    </field>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_req_inventory_part_tree" model="ir.ui.view">
+        <field name="name">request Inventory</field>
+        <field name="model">req.inventory.part</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="inv_pro_ids"/>
+                <field name="date_IN_WorkShop"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_enter_inventory_part_tree" model="ir.ui.view">
+        <field name="name">Inventory Category</field>
+        <field name="model">enter.inventory.part</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="inv_pro_ids"/>
+                <field name="date_IN_WorkShop"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_req_inventory_part" model="ir.actions.act_window">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">req.inventory.part</field>
+        <field name="view_mode">tree,form,search</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Ticket !</p>
+        </field>
+    </record>
+    <record id="action_enter_inventory_part" model="ir.actions.act_window">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">enter.inventory.part</field>
+        <field name="view_mode">tree,form,search</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Ticket !</p>
+        </field>
+    </record>
+    <record id="action_AIS_INVENTORY" model="ir.actions.act_window">
+        <field name="name">Surveillance systems Inventory</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ais.inventory</field>
+        <field name="view_mode">kanban,tree,form,search,graph</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Product !</p>
+        </field>
+
+    </record>
+    <record id="action_INVENTORY_All" model="ir.actions.act_window">
+        <field name="name">Inventory Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">inventory.all</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Product !</p>
+        </field>
+
+    </record>
+    <menuitem id="menu_INVENTORY"
+              name="Inventory"
+              parent="menu_workshop_root"
+              action="action_AIS_INVENTORY"
+              sequence="20"
+    />
+
+    <menuitem id="menu_AIS_INVENTORY"
+              name="Inventory Parts"
+              parent="menu_INVENTORY"
+              action="action_AIS_INVENTORY"
+              sequence="20"
+    />
+    <menuitem id="menu_cat_INVENTORY"
+              name="Add new Inventory Category"
+              parent="menu_INVENTORY"
+              action="action_INVENTORY_All"
+              sequence="20"
+    />
+    <menuitem id="menu_enter_inventory_part"
+              name="ENTERING PARTS "
+              parent="menu_INVENTORY"
+              action="action_enter_inventory_part"
+              sequence="20"
+    />
+    <menuitem id="menu_req_inventory_part"
+              name="REQUEST PARTS "
+              parent="menu_INVENTORY"
+              action="action_req_inventory_part"
+              sequence="20"
+    />
+
+</odoo>

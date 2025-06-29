@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="module_category_workshpo">
+        <field name="name">AIS</field>
+    </record>
+    <record id="group_workshop_admin" model="res.groups">
+        <field name="name">Admin</field>
+        <field name="category_id" ref="module_category_workshpo"/>
+    </record>
+    <record id="group_workshop_Show" model="res.groups">
+        <field name="name">SHOW</field>
+        <field name="category_id" ref="module_category_workshpo"/>
+    </record>
+    <record id="group_workshop_Soldier" model="res.groups">
+        <field name="name">Soldier</field>
+        <field name="category_id" ref="module_category_workshpo"/>
+    </record>
+    <record id="group_workshop_Engineer" model="res.groups">
+        <field name="name">Engineer</field>
+        <field name="category_id" ref="module_category_workshpo"/>
+    </record>
+
+    <record id="group_workshop_Technician" model="res.groups">
+        <field name="name">Technician</field>
+        <field name="category_id" ref="module_category_workshpo"/>
+    </record>
+
+    <!--    <record id="ir_rule_ais_sendreceived" model="ir.rule">-->
+    <!--        <field name="name"> AIS Send Received</field>-->
+    <!--        <field name="model_id" ref="model_workshop_sendreceived"/>-->
+    <!--        <field name="groups" eval="[(4, ref('group_workshop_Technician'))]"/>-->
+    <!--        <field name="domain_force">[('progress' ,'in',('sper','confirm','reject','IN','send','done')]</field>-->
+    <!--    </record>-->
+
+    <record id="ir_rule_ais_inventory_all" model="ir.rule">
+        <field name="name">Show Inventory All part</field>
+        <field name="model_id" ref="model_ais_inventory"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Technician'))]"/>
+        <field name="domain_force">[('categ_ids.departmet_ids_inv', 'in',user.departmet_ids.ids)]</field>
+    </record>
+
+
+    <record id="ir_rule_ais_inventory_Engineer" model="ir.rule">
+        <field name="name">Show Inventory Engineer part</field>
+        <field name="model_id" ref="model_ais_inventory"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Engineer'))]"/>
+        <field name="domain_force">[('categ_ids.departmet_ids_inv','in',user.departmet_ids.ids)]</field>
+    </record>
+
+    <record id="ir_rule_ais_inventory_Soldier" model="ir.rule">
+        <field name="name">Show Inventory Soldier part</field>
+        <field name="model_id" ref="model_ais_inventory"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Soldier'))]"/>
+        <field name="domain_force">[('categ_ids.departmet_ids_inv', 'in',user.departmet_ids.ids)]</field>
+    </record>
+    <record id="ir_rule_ais_inventory_admin" model="ir.rule">
+        <field name="name">Show Inventory admin part</field>
+        <field name="model_id" ref="model_ais_inventory"/>
+        <field name="groups" eval="[(4, ref('group_workshop_admin'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+    <record id="ir_rule_ais_inventory_Show" model="ir.rule">
+        <field name="name">Show Inventory part</field>
+        <field name="model_id" ref="model_ais_inventory"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Show'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+    <!--    Rule Send Recived -->
+
+    <record id="ir_rule_workshop_sendreceived" model="ir.rule">
+        <field name="name">workshop sendreceived</field>
+        <field name="model_id" ref="model_workshop_sendreceived"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Technician'))]"/>
+        <field name="domain_force">[('Departmet_ids', 'in',user.departmet_ids.ids)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+    <record id="ir_rule_workshop_sendreceived_Engineer" model="ir.rule">
+        <field name="name">workshop sendreceived Engineer</field>
+        <field name="model_id" ref="model_workshop_sendreceived"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Engineer'))]"/>
+        <field name="domain_force">[('Departmet_ids', 'in',user.departmet_ids.ids)]</field>
+    </record>
+    <record id="ir_rule_workshop_sendreceived_Soldier" model="ir.rule">
+        <field name="name">workshop sendreceived Soldier</field>
+        <field name="model_id" ref="model_workshop_sendreceived"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Soldier'))]"/>
+        <field name="domain_force">[('Departmet_ids', 'in',user.departmet_ids.ids)]</field>
+    </record>
+
+    <record id="ir_rule_workshop_sendreceived_admin" model="ir.rule">
+        <field name="name">workshop sendreceived admin</field>
+        <field name="model_id" ref="model_workshop_sendreceived"/>
+        <field name="groups" eval="[(4, ref('group_workshop_admin'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+    <record id="ir_rule_workshop_sendreceived_Show" model="ir.rule">
+        <field name="name">workshop sendreceived Show</field>
+        <field name="model_id" ref="model_workshop_sendreceived"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Show'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+
+    <record id="ir_rule_warranty_part_Technician" model="ir.rule">
+        <field name="name">Warranty Part Technician</field>
+        <field name="model_id" ref="model_warranty_part"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Technician'))]"/>
+        <field name="domain_force">[('Departmet_Warranty_ids', 'in',user.departmet_ids.ids)]</field>
+    </record>
+        <record id="ir_rule_warranty_part_Soldier" model="ir.rule">
+        <field name="name">Warranty Part Soldier</field>
+        <field name="model_id" ref="model_warranty_part"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Soldier'))]"/>
+        <field name="domain_force">[('Departmet_Warranty_ids', 'in',user.departmet_ids.ids)]</field>
+    </record>
+
+    <record id="ir_rule_warranty_part_Engineer" model="ir.rule">
+        <field name="name">Warranty Part Engineer</field>
+        <field name="model_id" ref="model_warranty_part"/>
+        <field name="groups" eval="[(4, ref('group_workshop_Engineer'))]"/>
+        <field name="domain_force">[('Departmet_Warranty_ids', 'in',user.departmet_ids.ids)]</field>
+    </record>
+
+
+</odoo>

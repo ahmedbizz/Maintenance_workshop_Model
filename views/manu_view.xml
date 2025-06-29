@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_workshop_root"
+              name="Surveillance systems"
+              action="action_WorkShop_sendreceived"
+              sequence="0"
+    />
+    <menuitem id="menu_workshop_master"
+              name="Work Shop Tickets"
+              sequence="0"
+              parent="menu_workshop_root"
+    />
+
+</odoo>

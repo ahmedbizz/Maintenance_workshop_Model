@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_employee_metco_form" model="ir.ui.view">
+        <field name="name">METCO Empolyee</field>
+        <field name="model">employee.metco</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="alert alert-danger text-center o_form_header" role="alert"
+                         attrs="{'invisible': [('Warranty' ,'!=','expire')]}">
+
+                        <div>
+                            <strong>
+                                <h1 class="center text-primary fw-bold">This Employee Permit Expired sens =></h1><field name="days" readonly="1"/>
+                            </strong>
+                        </div>
+
+                    </div>
+                        <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm  m-4 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                    <div class="row">
+                                        <h1 style="color:blue;">
+                                          <field name="emp_ID" readonly="1" class="oe_inline" nolabel="1"/>
+                                        </h1>
+                                    </div>
+
+                                    <div class="row">
+                                        <field name="imge" widget="image" style="width:180px;height:100px;"/>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <group>
+                        <group>
+                            <field name="name" default_focus="1"/>
+                            <field name="Departmet_ids"/>
+                            <field name="phone_no"/>
+                            <field name="DATE_EXP_TS"/>
+                            <field name="days" invisible="1" readonly="1"/>
+                            <field name="Warranty"  readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="REGION"/>
+                            <field name="sector"/>
+                            <field name="DATE_HAIER"/>
+                            <field name="email"/>
+
+
+
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="emp_scan_ID" widget="pdf_viewer"/>
+                        </group>
+                        <group>
+                            <field name="emp_scan_passport" widget="pdf_viewer"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_employee_metco_tree" model="ir.ui.view">
+        <field name="name">employee_metco</field>
+        <field name="model">employee.metco</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="name" default_focus="1"/>
+                <field name="Departmet_ids"/>
+                <field name="REGION"/>
+                <field name="DATE_HAIER"/>
+                <field name="days" string="days"/>
+                <field name="Warranty"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_metco_kanban" model="ir.ui.view">
+        <field name="name">employee metco</field>
+        <field name="model">employee.metco</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <kanban default_group_by="Departmet_ids" class="o_kanban_mobile" sample="1">
+                <field name="id" attrs="{'invisible': True}"/>
+                <field name="imge"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.Departmet_ids.raw_value)} oe_kanban_global_click o_kanban_record_has_image_fill">
+                            <div class="o_kanban_image d-none d-md-block"
+                                 t-attf-style="background-image:url('#{kanban_image('employee.metco', 'imge', record.id.raw_value,placeholder)}')">
+                            </div>
+                            <div class="oe_kanban_content flex-grow-1">
+                                <div class="o_kanban_record_top mb-0">
+                                    <div class="o_kanban_record_top mb-0 ">
+                                        <strong class="o_kanban_record_title">
+                                            <h4 style="color:SlateBlue;">
+                                                <field name="name"/>
+                                            </h4>
+                                        </strong>
+                                    </div>
+                                </div>
+                                <h4 style="color:Tomato;">Empolyee ID :
+                                    <field name="emp_ID"/>
+                                </h4>
+
+
+                                <h6 style="color:SlateBlue;">Department.:
+                                   <field name="Departmet_ids"/>
+                                </h6>
+
+                                <h6 style="color:SlateBlue;">Permit:
+                                <div class="kanban-ribbon"   attrs="{'invisible': [('Warranty' ,'!=','valid')]}">
+
+                                  <field name="Warranty"/>
+
+                                    </div>
+                                    <div class="kanban-ribbon-red"  attrs="{'invisible': [('Warranty' ,'!=','expire')]}" >
+
+                                  <field name="Warranty"/>
+
+                                    </div>
+                                </h6>
+
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_employee_metco_search" model="ir.ui.view">
+        <field name="name">employee metco</field>
+        <field name="model">employee.metco</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="emp_ID"/>
+                <field name="name"/>
+                <field name="Departmet_ids"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_Departmet_ids" string="Department" context="{'group_by':'Departmet_ids'}"/>
+                </group>
+
+            </search>
+
+        </field>
+    </record>
+
+    <record id="view_employee_metco_graph" model="ir.ui.view">
+        <field name="name">employee metco</field>
+        <field name="model">employee.metco</field>
+        <field name="arch" type="xml">
+            <graph string="Activities Analysis" sample="1">
+                <field name="name"/>
+                <field name="Departmet_ids"/>
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="action_employee_metco" model="ir.actions.act_window">
+        <field name="name">employee metco</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">employee.metco</field>
+        <field name="view_mode">kanban,tree,form,search,graph</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first employee !</p>
+        </field>
+
+    </record>
+
+    <menuitem id="menu_employee_metco"
+              name="Employee metco"
+              parent="menu_workshop_root"
+              action="action_employee_metco"
+              sequence="20"
+    />
+
+
+</odoo>

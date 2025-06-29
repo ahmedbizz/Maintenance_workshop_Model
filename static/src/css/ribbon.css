@@ -1,0 +1,220 @@
+
+.k_ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+.k_ribbon::before,
+.k_ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.k_ribbon span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding-top: 3px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 400 10px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+  height: 15px;
+}
+.k_ribbon-sper {
+  background-color: #bb5a2b;
+}
+.k_ribbon-new {
+  background-color: #5DADE2;
+}
+.k_ribbon-done {
+  background-color: #2ECC71;
+}
+
+.k_ribbon-confirm {
+  background-color: #1ca92a;
+}
+.k_ribbon-reject {
+  background-color: #9d2927;
+}
+.k_ribbon-IN {
+  background-color: #bd9017;
+}
+.k_ribbon-send {
+  background-color: rgba(117, 169, 28, 0.34);
+}
+/* top left*/
+.k_ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.k_ribbon-top-left::before,
+.k_ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.k_ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.k_ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.k_ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.k_ribbon-top-right {
+  top: 0px;
+  right: 0px;
+  margin-top: 0px;
+}
+.k_ribbon-top-right::before,
+.k_ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.k_ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.k_ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.k_ribbon-top-right span {
+  left: -20px;
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.k_ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.k_ribbon-bottom-left::before,
+.k_ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.k_ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.k_ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.k_ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.k_ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.k_ribbon-bottom-right::before,
+.k_ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.k_ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.k_ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.k_ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+.button_t{
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgba(88, 101, 242, 1);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgba(88, 101, 242, 1);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.button_t span {
+  margin: 10px;
+}
+
+.button_t::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 40em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.button_t:hover {
+  color: #fff;
+  border: 1px solid rgba(88, 101, 242, 1);
+}
+
+.button_t:hover::before {
+  box-shadow: inset 0 0 0 10em rgba(88, 101, 242, 1);
+}
+.kanban-ribbon {
+  font-size: 15px;
+  font-weight: bold;
+  height: 17px;
+  width: 150px;
+  color: white !important;
+  background: #79e379;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+}
+
+.kanban-ribbon-red {
+  font-size: 15px;
+  font-weight: bold;
+  height: 17px;
+  width: 150px;
+  color: white !important;
+  background: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+}

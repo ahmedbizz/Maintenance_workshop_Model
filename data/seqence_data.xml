@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+
+        <record id="seq_workshop_sendreceived" model="ir.sequence">
+            <field name="name">workshop Send Received</field>
+            <field name="code">workshop.sendreceived</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+<!--          Sequences for sAIS_INVENTORY-->
+
+<!--          Sequences for sAIS_INVENTORY-->
+<!--        <record id="seq_AIS_INVENTORY" model="ir.sequence">-->
+<!--            <field name="name">AIS INVENTORY</field>-->
+<!--            <field name="code">ais.inventory</field>-->
+<!--            <field name="prefix">PRO-AIS-</field>-->
+<!--            <field name="padding">5</field>-->
+<!--            <field name="company_id" eval="False"/>-->
+<!--        </record>-->
+
+<!--        <record id="seq_SAGEM_INVENTORY" model="ir.sequence">-->
+<!--            <field name="name">SAGEM INVENTORY</field>-->
+<!--            <field name="code">ais.inventory.sagem</field>-->
+<!--            <field name="prefix">PRO-SAGM-</field>-->
+<!--            <field name="padding">5</field>-->
+<!--            <field name="company_id" eval="False"/>-->
+<!--        </record>-->
+
+<!--          <record id="seq_Flier_INVENTORY" model="ir.sequence">-->
+<!--            <field name="name">SAGEM INVENTORY</field>-->
+<!--            <field name="code">ais.inventory.Flier</field>-->
+<!--            <field name="prefix">PRO-FLIER-</field>-->
+<!--            <field name="padding">5</field>-->
+<!--            <field name="company_id" eval="False"/>-->
+<!--        </record>-->
+          <record id="seq_All_INVENTORY" model="ir.sequence">
+            <field name="name">All INVENTORY</field>
+            <field name="code">ais.inventory.All</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

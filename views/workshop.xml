@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+
+    <!--    Departmaent of workshop form -->
+
+    <record id="view_department_bg_form" model="ir.ui.view">
+        <field name="name">Surveillance systems Department</field>
+        <field name="model">department.bg</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" default_focus="1"/>
+                            <field name="Sequence" default_focus="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_department_bg_tree" model="ir.ui.view">
+        <field name="name">Surveillance systems Department</field>
+        <field name="model">department.bg</field>
+        <field name="arch" type="xml">
+            <tree sample="1" multi_edit="1">
+                <field name="name"/>
+                <field name="Sequence" default_focus="1"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_WorkShop_sendreceived_form" model="ir.ui.view">
+        <field name="name">Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+
+                    <field name="progress" default="new" nolabel="1" invisible="1" readonly="1"/>
+
+
+                </header>
+                <sheet>
+                    <div class="alert alert-danger text-center o_form_header" role="alert"
+                         attrs="{'invisible': [('Warranty' ,'!=','expire')]}">
+
+                        <div>
+                            <strong>
+                                <h1 class="center text-primary fw-bold">This Device Warranty Expired !!</h1>
+                            </strong>
+                        </div>
+
+                    </div>
+                    <widget name="web_ribbon" title="NEW" bg_color="bg-primary"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                    <widget name="web_ribbon" title="Expire Warranty" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('new','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="In Progress" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('new','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="REPLACEMENT" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','new','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="STORED" bg_color="bg-info"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','new','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="Request spare" bg_color="bg-info"
+                            attrs="{'invisible': [('progress' ,'in',('IN','new','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="confirm" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','new','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="rejec" bg_color="bg-danger"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','new','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="Projection" bg_color="bg-danger"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','new','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="DONE" bg_color="bg-dark"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','new','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                    <widget name="web_ribbon" title="SENT" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','new','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                    <widget name="web_ribbon" title="Send New" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                    <widget name="web_ribbon" title="Request send new" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                    <widget name="web_ribbon" title="Request replacement" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','new','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                    <widget name="web_ribbon" title="Request stored" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','new','Request_replacement','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                    <widget name="web_ribbon" title="In Compony" bg_color="bg-warning"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','new','Request_replacement','replacing','expire','7_days','renewed'))]}"/>
+
+
+                    <widget name="web_ribbon" title="Warranty Renewed" bg_color="bg-success"
+                            attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','new','Request_replacement','replacing','expire','sent_com','7_days'))]}"/>
+
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm  m-4 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="btn-group btn-group-justified">
+
+
+                                        <button name="action_IN" type="object" string="In Progress"
+                                                class="button_t btn-primary"
+                                                groups="AIS_WORKSHOP.group_workshop_Technician"
+                                                attrs="{'invisible': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_sper" type="object" string="Request Parts"
+                                                class="button_t btn-warning"
+                                                groups="AIS_WORKSHOP.group_workshop_Technician"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','Projection','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_confirm" type="object" string="confirm"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier"
+                                                attrs="{'invisible': [('progress' ,'in',('new','IN','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_print" type="object" string="Print"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier,AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','IN','Projection','reject','done',
+                            'send','Request_send_new','stored','Request_stored','replacing','expire','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_reject" type="object" string="Rejection"
+                                                class="button_t btn-danger"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier"
+                                                attrs="{'invisible': [('progress' ,'in',('new','IN','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_Projection" type="object" string="Projection"
+                                                class="button_t btn-danger"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+
+                                        <button name="action_done" type="object" string="Done"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com'))]}"/>
+
+
+                                        <button name="action_send" type="object" string="Send"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','IN','confirm','reject','send','Request_send_new','Request_replacement','stored','Request_stored','7_days','sent_com','renewed'))]}"/>
+
+                                        <button name="action_req_send_new" type="object" string="Request New"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('sper','done','IN','Projection','reject','send','confirm','Request_send_new','Request_replacement','stored','send_new','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                                        <button name="action_send_new" type="object" string="Confirm"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','IN','Projection','confirm','reject','done','send','send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+                                        <button name="SentCompany" type="object" string="Compony"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','Projection','confirm','reject','done','send','send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com'))]}"/>
+                                        <button name="renewedWarnty" type="object" string="Renew Warranty "
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','IN','sper','Projection','confirm','reject','done','send','send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','renewed'))]}"/>
+
+
+                                        <button name="action_replacing" type="object" string="Confirm"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','IN','Projection','confirm','reject','done','send','Request_send_new','send_new','stored','Request_stored','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                                        <button name="action_req_replac" type="object" string="Replacement"
+                                                class="button_t btn-success"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('sper','IN','Projection','confirm','reject','done','send','Request_send_new','send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com'))]}"/>
+
+                                        <button name="action_stored" type="object" string="Add Store"
+                                                class="button_t btn-warning"
+                                                groups="AIS_WORKSHOP.group_workshop_Soldier"
+                                                attrs="{'invisible': [('progress','in',('done','new','sper','IN','Projection','reject','send','send_new','Request_send_new','confirm','stored','Request_replacement','replacing','expire','7_days','sent_com','renewed'))]}"/>
+
+                                        <button name="action_req_stored" type="object" string="Storage"
+                                                class="button_t btn-warning"
+                                                groups="AIS_WORKSHOP.group_workshop_Engineer"
+                                                attrs="{'invisible': [('progress' ,'in',('new','sper','IN','Projection','confirm','reject','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','expire','7_days','sent_com'))]}"/>
+
+
+                                    </div>
+                                    <div class="o_row">
+                                        <h1 style="color:blue;">
+                                            <field name="ref" readonly="1" force_save="1"/>
+                                        </h1>
+                                    </div>
+
+                                    <div class="row">
+                                        <field name="imge" widget="image" style="width:180px;height:100px;"/>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <group>
+                        <group>
+
+
+                            <field name="Sequence_cat" invisible="1" string="Sequence Tiket"/>
+                            <field name="Departmet_ids" force_save="1" string="Departmet"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"
+                                   default_focus="1"/>
+                            <field name="name_id" string="Product"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"/>
+                            <field name="SERIAL_NO"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','Request_send_new','stored','Request_replacement','Request_stored','renewed','expire','sent_com','7_days'))]}"/>
+                            <field name="date_IN_WorkShop"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"/>
+                            <field name="QTY"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"/>
+                            <field name="STATUS" widget="selection" readonly="1" force_save="1"/>
+
+                            <field name="req_count" string="count" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="ISSUE_NOTE"
+                                   attrs="{'readonly': [('progress' ,'in',('Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"/>
+                            <field name="DATE_OUT"
+                                   attrs="{'invisible': [('progress' ,'in',('new','IN','sper','confirm','Projection','reject','done','Request_send_new','stored','Request_replacement','Request_stored','replacing'))],'readonly': [('progress' ,'in',('Projection','confirm','reject','IN','done','replacing','stored'))]}"/>
+                            <field name="active" invisible="1"/>
+
+                            <field name="REGION"
+                                   ttrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing'))]}"/>
+                            <field name="sector"/>
+
+                            <field name="ExpireDateWarranty" readonly="1"/>
+                            <field name="days" invisible="1" readonly="1"/>
+                            <field name="Warranty"  readonly="1"/>
+
+                            <field name="create_date"/>
+                            <field name="REPAIR_ACTION"
+                                   attrs="{'readonly': [('progress' ,'in',('Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing','renewed','expire','sent_com','7_days'))]}"/>
+                        </group>
+
+
+                        <group>
+                            <field name="file_scan_rep" widget="pdf_viewer"
+                                   attrs="{'invisible':  [('progress' ,'in',('new','IN','sper','Projection','confirm','reject','replacing','send_new','Request_send_new','Request_replacement','Request_stored','renewed','expire','sent_com','7_days'))]}"/>
+
+                        </group>
+
+                        <group>
+
+                            <field name="file_scan_polisa" widget="pdf_viewer"
+                                   attrs="{'invisible':  [('progress' ,'in',('new','IN','sper','Projection','confirm','reject','done','replacing','send_new','Request_send_new','stored','Request_replacement','Request_stored'))]}"/>
+
+
+                        </group>
+
+                        <group>
+                            <field name="technician_id" force_save="1" widget="many2one_avatar"
+                                domain="[('departmet_ids', '=', Departmet_ids)]"
+                                   attrs="{'readonly': [('progress' ,'in',('IN','sper','confirm','Projection','reject','done','send','send_new','Request_send_new','stored','Request_replacement','Request_stored','replacing'))]}"/>
+                        </group>
+
+                        <group>
+
+                            <field name="technician_Engineer" force_save="1" widget="many2one_avatar"
+                                domain="[('departmet_ids', '=', Departmet_ids)]"
+                                   attrs="{'invisible': [('progress' ,'in',('new'))],'readonly':[('progress' ,'in',('IN','sper','confirm','Projection','reject','send','send_new','stored','replacing'))]}"/>
+
+
+                        </group>
+                        <group>
+
+                            <field name="technician_Manger" force_save="1" widget="many2one_avatar"
+                                domain="[('departmet_ids', '=', Departmet_ids)]"
+                                   attrs="{'invisible': [('progress' ,'in',('new'))],'readonly':[('progress' ,'in',('IN','sper','confirm','Projection','reject','send','send_new','stored','replacing'))]}"/>
+
+
+                        </group>
+
+                    </group>
+                    <notebook>
+                        <page string="SPAR PARTS" name="SPAE"
+                              attrs="{'invisible': [('progress' ,'in',('new','Projection','IN','stored','replacing','renewed','expire','sent_com','7_days'))]}">
+                            <!--                      editable="bottom"-->
+                            <field name="inv_pro_ids"
+                                   attrs="{'readonly': [('progress' ,'in',('new','IN','send','Projection','confirm','reject','done','replacing','send_new','Request_send_new','stored','Request_replacement','Request_stored'))]}">
+                                <tree editable="bottom">
+
+                                    <field name="name"/>
+                                    <field name="ref"/>
+                                    <field name="conf"/>
+                                    <field name="QTY"/>
+                                    <field name="reuect_num"/>
+
+                                </tree>
+
+                            </field>
+                        </page>
+
+                        <page string="Description" name="Description"
+                              attrs="{'readonly': [('progress' ,'in',('send','Projection','confirm','reject','IN','done','replacing','stored'))]}">
+                            <group>
+                                <field name="Description" placeholder="Enter your NOTE !!"
+                                       options="{'collaborative': true}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_WorkShop_sendreceived_tree" model="ir.ui.view">
+        <field name="name">Surveillance systems Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="arch" type="xml">
+            <tree decoration-success="progress == 'send'" decoration-info="progress == 'new'"
+                  decoration-danger="progress == 'done'" decoration-warning="progress == 'IN'" sample="1"
+                  default_order="id desc">
+                <field name="create_date"/>
+                <field name="name_id" string="Product"/>
+                <field name="SERIAL_NO"/>
+                <field name="QTY"/>
+                <field name="technician_id" widget="many2one_avatar_user"/>
+                <field name="Departmet_ids" force_save="1" string="Departmet"/>
+                <field name="DATE_OUT"/>
+                <field name="REGION"/>
+                <field name="sector"/>
+                <field name="days" string="Days"/>
+                <field name="Warranty"/>
+
+                <field name="progress" widget="badge" decoration-success="progress == 'send'"
+                       decoration-info="progress == 'new'" decoration-danger="progress == 'done'"
+                       decoration-warning="progress == 'IN'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_workshop_sendreceived_kanban" model="ir.ui.view">
+        <field name="name">Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <kanban default_group_by="STATUS" sample="1">
+                <field name="progress"/>
+                <field name="color"/>
+                <field name="kan_prog_col"/>
+
+                <field name="imge"/>
+                <field name="id" attrs="{'invisible': True}"/>
+
+                <!--                <progressbar field="progress" colors="{&quot;planned&quot;: &quot;success&quot;, &quot;today&quot;: &quot;warning&quot;, &quot;overdue&quot;: &quot;danger&quot;}" sum_field="expected_revenue" help="This bar allows to filter the opportunities based on scheduled activities."/>-->
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.STATUS.raw_value)} oe_kanban_global_click o_kanban_record_has_image_fill">
+
+
+                            <div class="o_kanban_image  d-none d-md-block"
+                                 t-attf-style="background-image:url('#{kanban_image('workshop.sendreceived', 'imge', record.id.raw_value,placeholder)}')">
+                                <!--                                        <img class="o_kanban_image_inner_pic" t-att-src="kanban_image('workshop.sendreceived', 'imge', record.id.raw_value)"/>-->
+                            </div>
+
+
+                            <div class="oe_kanban_content flex-grow-1">
+                                <div t-attf-class="k_ribbon k_ribbon-top-right">
+                                    <span t-attf-class="k_ribbon-{{ record.progress.raw_value }}">
+                                        <t t-esc="record.progress.raw_value"/>
+                                    </span>
+                                </div>
+
+
+                                <div class="oe_kanban_details">
+                                    <div class="o_kanban_record_top mb-0 ">
+                                        <strong class="o_kanban_record_title">
+                                            <h4 style="color:SlateBlue;">
+                                                <field name="name_id"/>
+                                            </h4>
+                                        </strong>
+
+                                    </div>
+
+
+                                    <h4 style="color:Tomato;">SERIAL NO :
+                                        <field name="SERIAL_NO"/>
+                                    </h4>
+
+
+                                    <h6 style="color:SlateBlue;">STATUS :
+                                        <field name="STATUS"/>
+                                    </h6>
+
+
+                                </div>
+                            </div>
+                            <div class="oe_clear"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_workshop_sendreceived_search" model="ir.ui.view">
+        <field name="name">Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="SERIAL_NO"/>
+                <field name="ref"/>
+                <field name="name_id"/>
+                <field name="DATE_OUT"/>
+                <field name="active"/>
+                <field name="SERIAL_NO"/>
+                <field name="date_IN_WorkShop"/>
+
+                <filter name="filter_archive" string="Archaive" domain="[('active','=',False)]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_REGION" string="REGION" context="{'group_by':'REGION'}"/>
+                </group>
+
+            </search>
+            <!--            <searchpanel>-->
+            <!--                <field name="REGION" string="Categories" enable_counters="1"/>-->
+            <!--            </searchpanel>-->
+        </field>
+    </record>
+    <record id="WorkShop_sendreceived_view_graph" model="ir.ui.view">
+        <field name="name">Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="arch" type="xml">
+            <graph string="Activities Analysis" sample="1">
+                <field name="REGION"/>
+                <field name="name_id"/>
+                <!--                <field name="req_count" />-->
+
+
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="action_WorkShop_sendreceived" model="ir.actions.act_window">
+        <field name="name">Tickets</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">workshop.sendreceived</field>
+        <field name="view_mode">tree,kanban,form,search,graph</field>
+        <field name="context">{'group_by':'progress'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Ticket !</p>
+        </field>
+
+    </record>
+    <!--Department action -->
+    <record id="action_department_bg" model="ir.actions.act_window">
+        <field name="name">Surveillance systems Department</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">department.bg</field>
+        <field name="view_mode">tree,kanban,form,search,graph</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Department !</p>
+        </field>
+
+    </record>
+
+    <!--this for warranty tree view-->
+
+    <record id="view_warranty_part_tree" model="ir.ui.view">
+        <field name="name">Warranty Part</field>
+        <field name="model">warranty.part</field>
+        <field name="arch" type="xml">
+            <tree editable="top" >
+
+                <field name="Departmet_Warranty_ids"/>
+                <field name="name"/>
+                <field name="ref" readonly="1"/>
+                <field name="QTY" readonly="1"/>
+                <field name="PART_NO" readonly="1"/>
+                <field name="SERIAL_NO"/>
+                <field name="ExpireDateWarranty"/>
+                <field name="Days_warranty" readonly="1"/>
+                <field name="Warranty" readonly="1"/>
+
+            </tree>
+        </field>
+    </record>
+ <record id="view_warranty_part_search" model="ir.ui.view">
+        <field name="name">Device Warranty</field>
+        <field name="model">warranty.part</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="SERIAL_NO"/>
+                <field name="ref"/>
+                 <field name="name"/>
+                <field name="ExpireDateWarranty"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_Warranty" string="Warranty" context="{'group_by':'Warranty'}"/>
+                </group>
+
+            </search>
+            <!--            <searchpanel>-->
+            <!--                <field name="REGION" string="Categories" enable_counters="1"/>-->
+            <!--            </searchpanel>-->
+        </field>
+    </record>
+    <record id="action_warranty_part" model="ir.actions.act_window">
+        <field name="name">Warranty Part</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">warranty.part</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Device !</p>
+        </field>
+
+    </record>
+
+
+    <menuitem id="menu_warranty_part"
+              name="Warranty"
+              parent="menu_workshop_master"
+              action="action_warranty_part"
+              sequence="1"/>
+
+
+    <menuitem id="menu_workshop"
+              name="Tickets"
+              parent="menu_workshop_master"
+              action="action_WorkShop_sendreceived"
+              sequence="0"
+    />
+    <menuitem id="menu_workshop_Department"
+              name="Add New Department"
+              parent="menu_workshop_master"
+              action="action_department_bg"
+              sequence="1"/>
+
+</odoo>

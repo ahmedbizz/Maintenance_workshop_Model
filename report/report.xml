@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="workshop_sendreceived_print_badge" model="ir.actions.report">
+        <field name="name">Print Tickets</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">AIS_WORKSHOP.workshop_sendreceived_print</field>
+        <field name="report_file">AIS_WORKSHOP.workshop_sendreceived_print</field>
+        <field name="print_report_name">'Print Badge - %s' % (object.SERIAL_NO).replace('/', '')</field>
+          <field name="binding_model_id" ref="model_workshop_sendreceived"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+
+	<record id="workshop_spar_print_badge" model="ir.actions.report">
+        <field name="name">Print Spar</field>
+        <field name="model">workshop.sendreceived</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">AIS_WORKSHOP.workshop_spar_print</field>
+        <field name="report_file">AIS_WORKSHOP.workshop_spar_print</field>
+        <field name="print_report_name">'Print Badge - %s' % (object.SERIAL_NO).replace('/', '')</field>
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">report</field>
+    </record>
+
+        <record id="emp_print_badge" model="ir.actions.report">
+        <field name="name">employee</field>
+        <field name="model">employee.metco</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">AIS_WORKSHOP.employee_metco_print</field>
+        <field name="report_file">AIS_WORKSHOP.employee_metco_print</field>
+        <field name="print_report_name">'Print Badge - %s' % (object.name).replace('/', '')</field>
+        <field name="binding_model_id" ref="model_employee_metco"/>
+        <field name="groups_id" eval="[(4, ref('AIS_WORKSHOP.group_workshop_Engineer')),(4, ref('AIS_WORKSHOP.group_workshop_Soldier'))]"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
+

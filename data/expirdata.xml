@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+    <record id="ir_cron_date_expire" model="ir.cron">
+            <field name="name">WorkShop Expire Date</field>
+            <field name="model_id" ref="model_employee_metco"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.ExpireDatePrmit()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+        <record id="ir_cron_cam_expire" model="ir.cron">
+            <field name="name">Warranty Expire Date</field>
+            <field name="model_id" ref="model_workshop_sendreceived"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.ExpireDate()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+    <record id="ir_cron_cam_expire_part" model="ir.cron">
+            <field name="name">Warranty Expire Date Part</field>
+            <field name="model_id" ref="model_warranty_part"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.ExpireDate()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+       </data>
+</odoo>

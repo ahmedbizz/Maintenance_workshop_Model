@@ -1,0 +1,2029 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* AIS_WORKSHOP
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230917\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-25 05:00+0000\n"
+"PO-Revision-Date: 2024-01-25 05:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.report,print_report_name:AIS_WORKSHOP.workshop_sendreceived_print_badge
+#: model:ir.actions.report,print_report_name:AIS_WORKSHOP.workshop_spar_print_badge
+msgid "'Print Badge - %s' % (object.SERIAL_NO).replace('/', '')"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.report,print_report_name:AIS_WORKSHOP.emp_print_badge
+msgid "'Print Badge - %s' % (object.name).replace('/', '')"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid ""
+"<br/>     ضابط الصيانة /\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid ""
+"<br/>المــملكــــة العـــــربيـــــة السعـــودية\n"
+"\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\tوزارة الداخــــــلــــيــــــــــــة\n"
+"\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\tحــــــرس الحــــــدود\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\tــــــــــــــــــــــ\n"
+"\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t\tالتقنية و الذكاء الاصطناعي<br/>\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t\tالإسناد الفني/ تشغيل وصيانة الانظمة الامنية"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__abha
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__abha
+msgid "ABHA"
+msgstr "ابهاء"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#: model:ir.module.category,name:AIS_WORKSHOP.module_category_workshpo
+#, python-format
+msgid "AIS"
+msgstr "التتبع الالي للسفن"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__madinah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__al_madinah_al_munawwarah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__madinah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__al_madinah_al_munawwarah
+msgid "AL Madinah AL Munawwarah"
+msgstr "المدينة المنورة "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alqida
+msgid "AL-QIADA"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__arar
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__arar
+msgid "ARAR"
+msgstr "عرعر"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__aviation
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__aviation
+msgid "AVIATION AFFAIRS"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__abdulaziz_port
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__abdulaziz_port
+msgid "Abdulaziz Port"
+msgstr "ميناء عبد العزيز"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "Achievements for all departments"
+msgstr "انجازات  الاقسام "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_needaction
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_needaction
+msgid "Action Needed"
+msgstr "عملية مطلوبه"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_ids
+msgid "Activities"
+msgstr "عمليات"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.WorkShop_sendreceived_view_graph
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.ais_inventory_view_graph
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_employee_metco_graph
+msgid "Activities Analysis"
+msgstr "تحليل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_exception_decoration
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "وصف التحليل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_state
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_state
+msgid "Activity State"
+msgstr "حالة العملية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_type_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "ايقونه"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_workshop_Department
+msgid "Add New Department"
+msgstr "اضافة قسم"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Add Store"
+msgstr "تخزين في المستودع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_cat_INVENTORY
+msgid "Add new Inventory Category"
+msgstr "اضافة مخزن"
+
+#. module: AIS_WORKSHOP
+#: model:res.groups,name:AIS_WORKSHOP.group_workshop_admin
+msgid "Admin"
+msgstr "مسؤل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__ahmed_base
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__ahmed_base
+msgid "Ahmed base"
+msgstr "قاعدة احمد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__al-awiqila
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__al-awiqila
+msgid "Al-Awiqila"
+msgstr "العويقلية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__al-issawiya
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__al-issawiya
+msgid "Al-Issawiya"
+msgstr "العيساوية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__almudirya
+msgid "AlMudirya- riyadh"
+msgstr "الرياض-المديرية"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "All"
+msgstr "الكل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__arada
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__arada
+msgid "Arada"
+msgstr "عرده"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__aramco_port
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__aramco_port
+msgid "Aramco port"
+msgstr "ميناء ارامكو"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_workshop_sendreceived_search
+msgid "Archaive"
+msgstr "ارشفة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_attachment_count
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد الاضافة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__baesha
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__baesha
+msgid "BARSHA"
+msgstr "برشاعه"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__batha
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__batha
+msgid "Batha"
+msgstr "البطحاء"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "CCTV"
+msgstr "التلفزيونية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__categ_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__name
+msgid "Catogery"
+msgstr "قسم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__new
+msgid "Check"
+msgstr "جاري الفحص"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__color
+msgid "Color Index"
+msgstr "عنوان اللون"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__confirm
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__confirm
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Confirm"
+msgstr "قطع الغيار معتمدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__confirm
+msgid "Confirm Spar Part"
+msgstr "الطلبات المعتمدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__conf
+msgid "Confirmation"
+msgstr "الاعتماد"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_department_bg
+msgid "Create your first Department !"
+msgstr "أنشاء اول قسم لك !"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_AIS_INVENTORY
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_INVENTORY_All
+msgid "Create your first Product !"
+msgstr "أنشاء اول  جهاز لك !"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_WorkShop_sendreceived
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_enter_inventory_part
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_req_inventory_part
+msgid "Create your first Ticket !"
+msgstr "أنشاء اول طلب صيانة لك !"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.actions.act_window,help:AIS_WORKSHOP.action_employee_metco
+msgid "Create your first employee !"
+msgstr "أنشاء اول موضف لك !"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__create_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__create_uid
+msgid "Created by"
+msgstr "أنشاء بواسطة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__create_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__create_date
+msgid "Created on"
+msgstr "أنشاء في "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__damam
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__damam
+msgid "DAMAM"
+msgstr "الدمام"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__date_IN_WorkShop
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__date_IN_WorkShop
+msgid "DATE ENTERING"
+msgstr "تاريخ الدخول"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__date_IN_WorkShop
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__DATE_OUT
+msgid "DATE OUT"
+msgstr "تأريخ الخروج"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__DATE_EXP_TS
+msgid "DATE PERMIT"
+msgstr "تاريخ انتهاء التصريح"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__destruction
+msgid "DESTRUCTION"
+msgstr "اسقاط"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__name_id
+msgid "DEVICE NAME"
+msgstr "اسم الجهاز"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__done
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__done
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "DONE"
+msgstr "تم الاصلاح"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_Dashboard
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_Dashboard
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_todo_dash
+msgid "Dashboard"
+msgstr "شاشة العرض"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__Departmet_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__departmet_ids_inv
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_res_users__departmet_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__Departmet_ids
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_search
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_tree
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_employee_metco_search
+msgid "Department"
+msgstr "القسم"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_employee_metco_kanban
+msgid "Department.:"
+msgstr "القسم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__Departmet_id
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_tree
+msgid "Departmet"
+msgstr "القسم"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.res_users_form_inherit
+msgid "Depsrtment"
+msgstr "القسم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__Description
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Description"
+msgstr "القطع اللازمة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__name
+msgid "Device Name"
+msgstr "اسم الجهاز"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__display_name
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Done"
+msgstr "تم الاصلاح"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__duba
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__duba
+msgid "Duba"
+msgstr "ضباء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_enter_inventory_part
+msgid "ENTERING PARTS "
+msgstr " ادخل القطع"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_enter_inventory_part_form
+msgid "ENTERING STOR"
+msgstr "ادخل الى المستودع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__enter_inventory_part__progress__enter
+msgid "ENTERING TO STORE"
+msgstr "ادخل الى المستودع"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_req_inventory_part_form
+msgid "ENTERING request"
+msgstr "طلب ادخال"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__eastern
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__eastern
+msgid "Eastern"
+msgstr "الشرقية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__eastern_training_center
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__eastern_training_center
+msgid "Eastern Training Center"
+msgstr "مركز التدريب - الشرقية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__email
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__emp_ID
+msgid "Employee ID"
+msgstr "رقم الموضف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__name
+msgid "Employee Name"
+msgstr "اسم  الموضف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_employee_metco
+msgid "Employee metco"
+msgstr "موضفين شركة المهمات"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_employee_metco_kanban
+msgid "Empolyee ID :"
+msgstr "رقم الموضف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__technician_Engineer
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__technician_Engineer
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__technician_Engineer
+#: model:res.groups,name:AIS_WORKSHOP.group_workshop_Engineer
+msgid "Engineer"
+msgstr "المهندس"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Enter your NOTE !!"
+msgstr "ادخل معلومات الصيانة"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "FLIER"
+msgstr "المحموله"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__fahd_base
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__fahd_base
+msgid "Fahd base"
+msgstr "قاعدة فهد"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "Finished orders"
+msgstr "الطلبات المنجزة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_follower_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_partner_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين الشركاء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__activity_type_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_search
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_employee_metco_search
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_workshop_sendreceived_search
+msgid "Group By"
+msgstr "تصنيف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__DATE_HAIER
+msgid "HAIER DATE"
+msgstr "تاريخ التوظيف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__hafar_al-batin
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__hafar_al-batin
+msgid "Hafar Al-Batin"
+msgstr "حفر الباطن"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__has_message
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__has_message
+msgid "Has Message"
+msgstr "رساله"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__id
+msgid "ID"
+msgstr "الرقم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__in
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__in
+msgid "IN progress"
+msgstr "تحت الصيانة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__ISSUE_NOTE
+msgid "ISSUE/NOTE"
+msgstr "وصف العطل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__istiqbarath
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__istiqbarath
+msgid "ISTIQBARATH"
+msgstr "الاستخبارات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_exception_icon
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_exception_icon
+msgid "Icon"
+msgstr "ايقونة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__activity_exception_icon
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__message_needaction
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "لا توجد رساله"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__message_has_sms_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__message_has_error
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "يوجد رسائل خطاء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__imge
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__imge
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__imge
+msgid "Image"
+msgstr "الصورة"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "In Progress"
+msgstr "تحت الصيانة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__intelligence
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__intelligence
+msgid "Intelligence"
+msgstr "الاستخبارات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_INVENTORY
+msgid "Inventory"
+msgstr "المخزن"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_INVENTORY_All
+msgid "Inventory Category"
+msgstr "اقسام المخزن"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_AIS_INVENTORY
+msgid "Inventory Parts"
+msgstr "مخزن قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__emp_scan_ID
+msgid "Iqama/ID"
+msgstr "الاقامة/الهويةالوطنية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_is_follower
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__jeddah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__jeddah
+msgid "JEDDAH"
+msgstr "جدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__jizan
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__jizan
+msgid "JIZAN"
+msgstr "جازان"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__jazan
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__jazan
+msgid "Jazan"
+msgstr "جازان"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__jazan_port
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__jazan_port
+msgid "Jazan port"
+msgstr "ميناء جازان"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__jeddah_por
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__jeddah_por
+msgid "Jeddah Por"
+msgstr "ميناء جدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__jubail
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__jubail
+msgid "Jubail"
+msgstr "الجبيل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__khafji
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__khafji
+msgid "Khafji"
+msgstr "الخفجي"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__laith
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__laith
+msgid "Laith"
+msgstr "الليث"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part____last_update
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__write_uid
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__write_date
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__write_date
+msgid "Last Updated on"
+msgstr "اخر تعديل في"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__Location
+msgid "Location"
+msgstr "الموقع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__mazra
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__mazra
+msgid "MAZRA"
+msgstr "المزرعة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_employee_metco
+msgid "MTECO STUFF"
+msgstr "موظفي المهمات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_main_attachment_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__makkah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__makkah__almukarama
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__makkah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__makkah__almukarama
+msgid "Makkah  almukarama"
+msgstr "مكة المكرمة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__technician_Manger
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__technician_Manger
+msgid "Manger"
+msgstr "المدير"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__marine_force
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__marine_force
+msgid "Marine force"
+msgstr "القوة البحرية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_has_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_has_error
+msgid "Message Delivery error"
+msgstr "رسالة خطاء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_ids
+msgid "Messages"
+msgstr "رساله"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__mohammed_base
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__mohammed_base
+msgid "Mohammed base"
+msgstr "قاعدة محمد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__my_activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.Dashboard_form_view
+msgid "My Dashboard"
+msgstr "شاشة العرض"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__enter_inventory_part__progress__new
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__req_inventory_part__progress__new
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__new
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__new
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_enter_inventory_part_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_req_inventory_part_form
+msgid "NEW"
+msgstr "جديد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__naif_base
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__naif_base
+msgid "Naif base"
+msgstr "قاعدة نايف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__najran
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__najran
+msgid "Najran"
+msgstr "نجران"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_date_deadline
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_summary
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_type_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__north
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__north
+msgid "North"
+msgstr "الشمالية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__northern_training_center
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__northern_training_center
+msgid "Northern Training Center"
+msgstr "مركز التدريب - الشمالية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_needaction_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد العمليات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_has_error_counter
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__message_needaction_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__message_has_error_counter
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__inv_pro_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__inv_pro_ids
+msgid "PART"
+msgstr "القطع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__PART_NO
+msgid "PART NO"
+msgstr "رقم الصنف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__PART_NO
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__PART_NO
+msgid "PART NO."
+msgstr "رقم الصنف"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_kanban
+msgid "PART NO.:"
+msgstr "رقم الصنف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__name_part
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__name
+msgid "Part Name"
+msgstr "اسم القطعة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__emp_scan_passport
+msgid "Passport"
+msgstr "الجواز"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__pesh
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__pesh
+msgid "Pesh"
+msgstr "بيش"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__file_scan_polisa
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__file_scan_polisa
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__file_scan_polisa
+msgid "Polisa"
+msgstr "بوليصة الشحن"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Print"
+msgstr "طباعه"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.report,name:AIS_WORKSHOP.workshop_spar_print_badge
+msgid "Print Spar"
+msgstr "طباعة اذن صرف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.report,name:AIS_WORKSHOP.workshop_sendreceived_print_badge
+msgid "Print Tickets"
+msgstr "طباعه تقرير اصلاح"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_tree
+msgid "Product"
+msgstr "الجهاز"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__projection
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__projection
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__projection
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Projection"
+msgstr "اسقاط"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__QTY_pro
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__QTY
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__QTY
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__QTY
+msgid "QTY"
+msgstr "الكمية"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_kanban
+msgid "QTY :"
+msgstr "الكمية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__qatif
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__qatif
+msgid "Qatif"
+msgstr "القطيف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__qunfudhah
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__qunfudhah
+msgid "Qunfudhah"
+msgstr "القنفذة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__ref
+msgid "REFERENCE"
+msgstr "الرقم المرجعي"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__REGION
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__REGION
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_workshop_sendreceived_search
+msgid "REGION"
+msgstr "المنطقة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__REPAIR_ACTION
+msgid "REPAIR ACTION"
+msgstr "الاجراء المتخذ"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__fexied
+msgid "REPAIRED"
+msgstr "تم الاصلاح"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__replacing
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__replacing
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "REPLACEMENT"
+msgstr "تم الاستبدال"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_req_inventory_part
+msgid "REQUEST PARTS "
+msgstr "طلب قطع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__req_inventory_part__progress__req
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_req_inventory_part_form
+msgid "REQUESTED"
+msgstr "تم صرفها "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__riyadh
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__riyadh
+msgid "RIYADH"
+msgstr "الرياض"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__reuect_num
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__reuect_num
+msgid "RQUECT"
+msgstr "طلب"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__rabigh
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__rabigh
+msgid "Rabigh"
+msgstr "رابغ"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__rafha
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__rafha
+msgid "Rafha"
+msgstr "رفحاء"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__ras_tanura
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__ras_tanura
+msgid "Ras Tanura"
+msgstr "راس تنورة"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "Ready to send"
+msgstr "الطلبات الجاهزة "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__ref_pro
+msgid "Refrance"
+msgstr "ارجاع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__reject
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__reject
+msgid "Reject"
+msgstr "رفض"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__reject
+msgid "Reject Spar Part"
+msgstr "رفض قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Rejection"
+msgstr "مرفوضه"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Replacement"
+msgstr "ارسال بديل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__file_scan_rep
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__file_scan_rep
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__file_scan_rep
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Report"
+msgstr " تقرير الصيانة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__req_count
+msgid "Req Count"
+msgstr "عدد الطلبات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__enter_inventory_part__progress__request
+msgid "Request ENTERING"
+msgstr "طلب ادخال"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request New"
+msgstr "طلب جديد"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request Parts"
+msgstr "طلب قطع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__request_replacement
+msgid "Request Replacement"
+msgstr "طلب بديل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__request_send_new
+msgid "Request Send New Part"
+msgstr "طلب ارسال جديد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__request_stored
+msgid "Request Stored"
+msgstr "طلب ادخال مستودع "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__request_replacement
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request replacement"
+msgstr "طلب بديل "
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request send new"
+msgstr "طلب ارسال جديد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__request_send_new
+msgid "Request send new PART"
+msgstr "طلب ارسال جديد"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request spare"
+msgstr "طلب قطع غيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__sper
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__sper
+msgid "Request spare parts"
+msgstr "طلب قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__request_stored
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Request stored"
+msgstr "طلب ادخال مستودع "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__activity_user_id
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤل"
+
+#. module: AIS_WORKSHOP
+#. odoo-javascript
+#: code:addons/AIS_WORKSHOP/static/src/components/todo_dash.xml:0
+#, python-format
+msgid "SAGEM"
+msgstr "الكمرات الحرارية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__sector
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__sector
+msgid "SECTOR"
+msgstr "القطاع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__send
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__send
+msgid "SEND"
+msgstr "تم الارسال"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "SENT"
+msgstr "تم الارسال"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_workshop_sendreceived_kanban
+msgid "SERIAL NO :"
+msgstr "الرقم التسلسلي"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__SERIAL_NO
+msgid "SERIAL NO."
+msgstr "الرقم التسلسلي"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__shumaliya
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__shumaliya
+msgid "SHUMALIYA"
+msgstr "الشمالية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__message_has_sms_error
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__inv_pro_ids
+msgid "SPAR"
+msgstr "قطع غيار"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "SPAR PARTS"
+msgstr "قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__STATUS
+msgid "STATUS"
+msgstr "الحاله"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_workshop_sendreceived_kanban
+msgid "STATUS :"
+msgstr "الحاله"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__stored
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__kan_prog_col__stored
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__stored
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_enter_inventory_part_form
+msgid "STORED"
+msgstr "تم التخزين"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__salwa
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__salwa
+msgid "Salwa"
+msgstr "سلوى"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Send"
+msgstr "تم الارسال"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__send_ent_pro_id
+msgid "Send Ent Pro"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Send New"
+msgstr "ارسال جديد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__send_new
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__progress__send_new
+msgid "Send New Part"
+msgstr "ارسال جديد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__send_req_pro_id
+msgid "Send Req Pro"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__send_res_pro_id
+msgid "Send Res Pro"
+msgstr "ارسال قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__Sequence_cat
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__Sequence
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__Sequence
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_AIS_INVENTORY_form
+msgid "Sequence"
+msgstr "الرقم المرجعي"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__Sequence_cat
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Sequence Tiket"
+msgstr "الرقم المرجعي"
+
+#. module: AIS_WORKSHOP
+#: model:res.groups,name:AIS_WORKSHOP.group_workshop_Soldier
+msgid "Soldier"
+msgstr "المدير"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__activity_state
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "Storage"
+msgstr "تخزين"
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_workshop_root
+msgid "Surveillance systems"
+msgstr "النظم الامنية للمراقبة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_department_bg
+msgid "Surveillance systems Department"
+msgstr "اقسام النظم الامنية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_AIS_INVENTORY
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_enter_inventory_part
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_req_inventory_part
+msgid "Surveillance systems Inventory"
+msgstr "مخزن الانطمة الامنية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__tabuk
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__tabuk
+msgid "TABUK"
+msgstr "تبوك"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__tabuk
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__tabuk
+msgid "Tabuk"
+msgstr "تبوك"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__tabuk_training_center
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__tabuk_training_center
+msgid "Tabuk Training Center"
+msgstr "مركز التدريب تبوك"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__technician_id
+#: model:res.groups,name:AIS_WORKSHOP.group_workshop_Technician
+msgid "Technician"
+msgstr "الفني"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.act_WorkShop_sendreceived
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_WorkShop_sendreceived
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_workshop
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.Dashboard_form_view
+msgid "Tickets"
+msgstr "الطلبات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__activity_exception_decoration
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_res_users
+msgid "User"
+msgstr "المستخدم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__STATUS__pendig
+msgid "Waiting for spare parts"
+msgstr "في انتظار قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_ais_inventory__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_inventory_all__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__website_message_ids
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_ais_inventory__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_department_bg__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_employee_metco__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_enter_inventory_part__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_inventory_all__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_req_inventory_part__website_message_ids
+#: model:ir.model.fields,help:AIS_WORKSHOP.field_workshop_sendreceived__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model:ir.ui.menu,name:AIS_WORKSHOP.menu_workshop_master
+msgid "Work Shop Tickets"
+msgstr "طلبات الورش"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_ais_inventory
+msgid "WorkShop AIS INVENTORY"
+msgstr "مخزن الانطمة الامنية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_enter_inventory
+msgid "WorkShop ENTER INVENTORY"
+msgstr "ادخال الى المستودع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_enter_inventory_part
+msgid "WorkShop ENTER INVENTORY Part"
+msgstr "ادخال مستودغ قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_inventory_all
+msgid "WorkShop INVENTORY"
+msgstr "مخزن الانظمة الامنية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_req_inventory_part
+msgid "WorkShop REQUEST INVENTORY Part"
+msgstr "طلب قطع غيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_workshop_sendreceived
+msgid "WorkShop SEND & RECEIVED"
+msgstr "الطلبات المستقبلة والمرسلة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_department_bg
+msgid "Workshop Department"
+msgstr "اقسام الورش"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_department_bg__name
+msgid "Workshop Name"
+msgstr "اسم الورشة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__yanbu
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__yanbu
+msgid "YANBU"
+msgstr "ينبع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__yanbu_commercial_port
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__yanbu_commercial_port
+msgid "Yanbu Commercial Port"
+msgstr "ميناء ينبع التجاري "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__yanbu_industrial_port
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__yanbu_industrial_port
+msgid "Yanbu Industrial Port"
+msgstr "ميناء ينبع الصناعي "
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__active
+msgid "active"
+msgstr "نشط"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__albadae
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__albadae
+msgid "albadae"
+msgstr "البدع"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__aldaayir
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__aldaayir
+msgid "aldaayir"
+msgstr "الدائر"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alearida
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alearida
+msgid "alearida"
+msgstr "العارضة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alhaditha
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alhaditha
+msgid "alhaditha"
+msgstr "الحديثة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alharth
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alharth
+msgid "alharth"
+msgstr "الحرث"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__aljadida
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__aljadida
+msgid "aljadida"
+msgstr "الجديدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__aljawf
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__aljawf
+msgid "aljawf"
+msgstr "الجوف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__aljouf
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__aljouf
+msgid "aljouf"
+msgstr "الجوف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alkhabar
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alkhabar
+msgid "alkhabar"
+msgstr "الخبر"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__almawsim
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__almawsim
+msgid "almawsim"
+msgstr "الوسيم"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alqahma
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alqahma
+msgid "alqahma"
+msgstr "القحمة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alshueba
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alshueba
+msgid "alshueba"
+msgstr "الشعبة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__altiwal
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__altiwal
+msgid "altiwal"
+msgstr "الطوال"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__alwajh
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__alwajh
+msgid "alwajh"
+msgstr "الوجة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__amlaj
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__amlaj
+msgid "amlaj"
+msgstr "املج"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__shargiya
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__shargiya
+msgid "ashargiya"
+msgstr "الشرقية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__asir
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__asir
+msgid "asir"
+msgstr "عسير"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "confirm"
+msgstr "موافقة"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "count"
+msgstr "العدد"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__easir
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__easir
+msgid "easir"
+msgstr "عسير"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.report,name:AIS_WORKSHOP.emp_print_badge
+msgid "employee"
+msgstr "موظف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.act_window,name:AIS_WORKSHOP.action_employee_metco
+msgid "employee metco"
+msgstr "موظف المهمات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__fursan
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__fursan
+msgid "fursan"
+msgstr "فرسان"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__halat_eamaar
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__halat_eamaar
+msgid "halat eamaar"
+msgstr "حالة عمار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__haql
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__haql
+msgid "haql"
+msgstr "حقل"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__jida
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__jida
+msgid "jida"
+msgstr "جدة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__kubash
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__kubash
+msgid "kubash"
+msgstr "خباش"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__metco
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__metco
+msgid "metco / FLIER"
+msgstr "مهمات الشرق \\ فلير"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__mina_almuejiz
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__mina_almuejiz
+msgid "mina almuejiz"
+msgstr "ميناء المعجز"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__REGION__najran
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__REGION__najran
+msgid "najran"
+msgstr "نجران"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_employee_metco__phone_no
+msgid "phone"
+msgstr "رقم الموضف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory_part__progress
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_req_inventory_part__progress
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__kan_prog_col
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_workshop_sendreceived__progress
+msgid "progress"
+msgstr "معالجة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__quat_almarakiz_aljanubia
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__quat_almarakiz_aljanubia
+msgid "quat almarakiz aljanubia"
+msgstr "قوة المراكز الجنوبية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__quat_almarakiz_alshamalia
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__quat_almarakiz_alshamalia
+msgid "quat almarakiz alshamalia"
+msgstr "قوة المراكز الشمالية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_enter_inventory__ref
+#: model:ir.model.fields,field_description:AIS_WORKSHOP.field_spar_part__ref
+msgid "ref"
+msgstr "الرقم المرجعي"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_WorkShop_sendreceived_form
+msgid "rejec"
+msgstr "رفض"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.view_enter_inventory_part_form
+msgid "request"
+msgstr "طلب"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__sharura
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__sharura
+msgid "sharura"
+msgstr "شرورة"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model,name:AIS_WORKSHOP.model_spar_part
+msgid "spart part"
+msgstr "قطع الغيار"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__suqam
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__suqam
+msgid "suqam"
+msgstr "سقام"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__tarif
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__tarif
+msgid "tarif"
+msgstr "طريف"
+
+#. module: AIS_WORKSHOP
+#: model:ir.actions.client,name:AIS_WORKSHOP.action_todo_dash
+msgid "todo dshboard"
+msgstr "شاشة المعلومات"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__wahdat_alhimaya
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__wahdat_alhimaya
+msgid "wahdat alhimaya"
+msgstr "وحدة الحماية"
+
+#. module: AIS_WORKSHOP
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__employee_metco__sector__zahran_aljanub
+#: model:ir.model.fields.selection,name:AIS_WORKSHOP.selection__workshop_sendreceived__sector__zahran_aljanub
+msgid "zahran aljanub"
+msgstr "ظهران الجنوب"
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "اذن صرف قطع غيار"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "اسم الجهاز"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "اسم القطعة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "الاسم"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "الايميل"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "التاريخ"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "الجهاز"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "الحاله"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "الرقم التسلسلي"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "الرقم التسلسي"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "الضابط المسؤل"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "القسم"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "القطاع"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "الكمية المتبقية"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "الكمية المطلوبة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "المنطقة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "المهندس"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "بيانات الموظف"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "تاريخ الاستلام"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "تاريخ التعيين"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "تقرير صيانة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "تم استلام القطع الموضحة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.employee_metco_print
+msgid "رقم الجوال"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_spar_print
+msgid "رقم الصنف"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "عدد"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "فني الصيانة"
+msgstr ""
+
+#. module: AIS_WORKSHOP
+#: model_terms:ir.ui.view,arch_db:AIS_WORKSHOP.workshop_sendreceived_print
+msgid "وصف العطل"
+msgstr ""

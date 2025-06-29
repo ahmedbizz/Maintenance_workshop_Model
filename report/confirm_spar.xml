@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="workshop_spar_print">
+        <t t-foreach="docs" t-as="property">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+					<div class="oe_structure" style="text-align:right;">
+
+						<div t-attf-class="header" t-att-style="report_header_style">
+							<div class="o_boxed_header">
+								<div class="row mb8">
+									<div class="col-6">
+										<p>
+											<br/>المــملكــــة العـــــربيـــــة السعـــودية
+											<br/>
+											وزارة الداخــــــلــــيــــــــــــة
+											<br/>
+											حــــــرس الحــــــدود
+
+											<br/>
+											ــــــــــــــــــــــ
+											<br/>
+
+
+											التقنية و الذكاء الاصطناعي<br/>
+
+											الإسناد الفني/ تشغيل وصيانة الانظمة الامنية
+										</p>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+
+				
+
+						<div class="page" style="text-align: right;">
+
+							<h2>اذن صرف قطع غيار</h2>
+							<br/>
+
+
+							<table class="table">
+								<thead>
+									<tr>
+										<th>القسم</th>
+										<th>المنطقة</th>
+										<th>الرقم التسلسي</th>
+										<th>الجهاز</th>
+										<th> التاريخ </th>
+
+
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr >
+										<td>
+											<span t-field="property.Departmet_ids"/>
+										</td>
+										<td>
+											<span t-field="property.REGION"/>
+										</td>
+										<td>
+											<span t-field="property.SERIAL_NO"/>
+										</td>
+										<td>
+											<span t-field="property.name_id"/>
+										</td>
+										<td>
+											<span t-field="property.create_date"/>
+										</td>
+
+
+									</tr>
+
+								</tbody>
+
+							</table>
+
+							<br/>
+							<br/>
+						            <t t-if="property.mapped('inv_pro_ids')">
+	
+							<table class="table">
+								<thead>
+									<tr>
+										<th>الكمية المتبقية</th>
+										<th>الكمية المطلوبة</th>
+										<th>رقم الصنف</th>
+										<th>اسم القطعة</th>
+
+
+									</tr>
+								</thead>
+								<tbody>
+									<t t-set="offers" t-value="property.mapped('inv_pro_ids')"/>
+									<tr t-foreach="offers" t-as="offer">
+
+										<td>
+											<span t-field="offer.QTY"/>
+										</td>
+										<td>
+											<span t-field="offer.reuect_num"/>
+										</td>
+										<td>
+											<span t-field="offer.PART_NO"/>
+										</td>
+										<td>
+											<span t-field="offer.name"/>
+										</td>
+
+
+									</tr>
+
+								</tbody>
+
+							</table>
+
+</t>
+						</div>
+						<div class="oe_structure" style="text-align:center;">
+
+							<br/>     ضابط الصيانة /
+							<br/>
+							<br/><span t-field="property.technician_Manger"/>
+
+
+						</div>
+					</div>
+						</t>
+            </t>
+        </t>
+    </template>
+</odoo>

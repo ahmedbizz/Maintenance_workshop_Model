@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AIS_WORKSHOP.iml" filepath="$PROJECT_DIR$/.idea/AIS_WORKSHOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../addons/.idea/addons.iml" filepath="$PROJECT_DIR$/../../addons/.idea/addons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../.idea/server.iml" filepath="$PROJECT_DIR$/../../.idea/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tutorial/.idea/tutorial.iml" filepath="$PROJECT_DIR$/../tutorial/.idea/tutorial.iml" />
+    </modules>
+  </component>
+</project>

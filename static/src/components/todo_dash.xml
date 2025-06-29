@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="AIS_WORKSHOP.TodoDashbord" owl="1">
+        <div class="vh-100 overflow-auto bg-muted">
+            <div class="row m-3">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h1 class="text-primary fw-bold">Achievements for all departments</h1>
+                                    <div>
+                                        <select class="form-select" t-model="state.period" t-on-change="onChangePeriod" >
+                                             <option value="0">All</option>
+                                            <option value="1">AIS</option>
+                                            <option value="2">FLIER</option>
+                                            <option value="3">SAGEM</option>
+                                            <option value="4">CCTV</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <KpiCard onClick.bind="viewQuotations" name="'الصيانة'"  value="state.number_projection_value.value" />
+                        <KpiCard onClick.bind="viewQuotations"  name="'جديد'" value="state.number_Replacement_value.value"/>
+                        <KpiCard  onClick.bind="viewQuotations" name="'ارسل'" value="state.number_send_value.value" />
+                       <KpiCard  onClick.bind="viewQuotations" name="'جاهز'" value="state.number_done_value.value" />
+
+                    </div>
+                    <div class="row" onload="foo()">
+                        <div class="col-lg-6 m-0 p-0">
+                            <div   class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3  class="text-primary fw-bold">Finished orders</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+                                <ChartRenderer type="'doughnut'" title="'الطلبات المنجزة'" config="state.Topsend"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Ready to send</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+                                <ChartRenderer type="'pie'" title="'الطلبات الجاهزة للارسال'" config="state.TopDone" onClick.bind="viewQuotations"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Finished orders</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+                                <ChartRenderer type="'line'" title="'الطلبات المنجزة'" config="state.Topsend"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="text-primary fw-bold">Ready to send</h3>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+                                        <span class="fa fa-arrow-right text-white"/>
+                                    </div>
+                                </div>
+                                <ChartRenderer type="'bar'" title="'الطلبات الجاهزة'" config="state.TopDone"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

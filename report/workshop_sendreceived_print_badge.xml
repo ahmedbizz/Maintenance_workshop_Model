@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="workshop_sendreceived_print">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="oe_structure" style="text-align:center;">
+                      <br/>
+
+						<h2>تقرير صيانة </h2>
+						<br/>
+                    </div>
+
+
+                    <div class="page" style="text-align: right;">
+                       <h4> <p style="text-align: right;">
+
+						   تم استلام القطع الموضحة  
+                            
+
+                       </p>
+						   
+					   </h4>
+                        <br/>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+									<th>المنطقة</th>
+                                    <th>الرقم التسلسلي</th>
+                                    <th>اسم الجهاز</th>
+                                    <th>الحاله</th>
+									<th >عدد</th>
+                                    <th colspan="2">وصف العطل</th>
+                                    <th>تاريخ الاستلام</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	
+
+                                <tr  t-foreach="docs" t-as="offer" >
+                               
+                                  
+										<td>
+											<span t-field="offer.REGION"/>
+										</td>	
+                                    <td>
+                                        <span t-field="offer.SERIAL_NO"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="offer.name_id"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="offer.STATUS"/>
+                                    </td>
+										<td>
+											<span t-field="offer.QTY"/>
+										</td>	
+                                    <td colspan="2">
+                                        <span t-field="offer.ISSUE_NOTE"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="offer.date_IN_WorkShop"/>
+                                    </td>
+                                    
+                                </tr>
+
+								
+                            </tbody>
+                        </table>
+                        
+						<br/>
+						<br/>
+	<table class="table">
+					<thead>								
+                                <tr>
+								
+								
+									<th>المهندس</th>
+									<th>فني الصيانة</th>
+									<th> الضابط المسؤل </th>
+
+
+								</tr>
+
+</thead>
+
+								<tbody>
+  <t t-set="counter" t-value="0"/>
+                                <tr t-foreach="docs" t-as="o">
+                                	   <t t-if="counter == 0">
+									<td>
+										<span t-field="o.technician_Engineer"/>
+									</td>
+									<td>
+										<span t-field="o.technician_id"/>
+									</td>
+									<td>
+	
+										<span t-field="o.technician_Manger"/>
+									</td>
+								</t>
+									<t t-set="counter" t-value="counter + 1"/>
+
+								</tr>
+							
+
+								<tr >
+
+
+									<td>
+										<br/>
+									</td>
+									<td>
+										<br/>
+									</td>
+
+									<td>
+										<br/>
+									</td>
+								</tr>
+
+
+
+						</tbody>
+					</table>	
+                    </div>				
+
+
+            </t>
+        </t>
+    </template>
+</odoo>
